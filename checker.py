@@ -17,9 +17,8 @@ def search_website(url, target_string):
             
         print(f"Target string '{target_string}' found on the page.")
         
-        #
-        # Wait for 30 seconds before the next search
-        time.sleep(5) # 5 is not 30 seconds ^^
+        # Wait for 5 seconds before the next search
+        time.sleep(5)
 
 
 def send_email_notification(website_url):
