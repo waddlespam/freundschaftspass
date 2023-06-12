@@ -1,3 +1,5 @@
+# Sadly, the Freundschaftspass is already over and this project is no longer in use.
+
 # Website String Scanner and Email Notifier
 
 This Python bot scans a website and sends an email notification when a specific string is found on the webpage. It utilizes the `requests` library for making HTTP requests and the `smtplib` library for sending emails via SMTP.
