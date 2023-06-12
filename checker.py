@@ -50,5 +50,5 @@ def send_email_notification(website_url):
 
 # Example usage
 website_url = "https://anmelden.deutsch-franzoesischer-interrail-pass.de/"  # Replace with your desired website URL
-string_to_search = "Der deutsch-französischen Freundschaftspass ist Opfer seines Erfolgs geworden. Wir haben viele Anträge erhalten, die im Moment bearbeitet werden. Sobald alle Anträge eingegangen sind, wird die Plattform wieder geöffnet, um neue Anträge aufzunehmen. Vielen Dank für deine Geduld."
+string_to_search = "Liebe Interessenten, wir haben viele Anträge erhalten, die im Moment bearbeitet werden. Sobald alle Anträge bearbeitet wurden, wird die Plattform wieder geöffnet, um neue Anträge aufzunehmen. Vielen Dank für deine Geduld."
 search_website(website_url, string_to_search)
