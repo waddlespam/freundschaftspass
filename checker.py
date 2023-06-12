@@ -1,31 +1,25 @@
 import time
 import smtplib
 from email.message import EmailMessage
-from selenium import webdriver
+import requests
 
 
 def search_website(url, target_string):
     while True:
-        # Initialize the web driver
-        driver = webdriver.Chrome()  # You'll need to have the Chrome WebDriver installed
-        driver.get(url)
-
-        # Search for the target string on the page
-        page_content = driver.page_source
-        if not target_string in page_content:
+        r = requests.get(url)
+       
+        if not target_string in r.text:
             print(f"Target string '{target_string}' not found on the page.")
 
             # Send email notification
             send_email_notification(url)
-
-            # Close the browser
             break
+            
         print(f"Target string '{target_string}' found on the page.")
-
-        driver.quit()
+        
         #
         # Wait for 30 seconds before the next search
-        time.sleep(5)
+        time.sleep(5) # 5 is not 30 seconds ^^
 
 
 def send_email_notification(website_url):
